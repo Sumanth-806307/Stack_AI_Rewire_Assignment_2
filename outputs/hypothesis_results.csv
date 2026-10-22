@@ -1,0 +1,10 @@
+driver,label,test,statistic,p_value,significant,effect_size,direction
+total_spend,"Total spend (monetary, skewed)",Mann-Whitney U,61626.5,8.8e-05,True,0.3627,lower
+txn_count,"Transaction count (discrete, skewed)",Mann-Whitney U,62236.5,0.000153,True,0.3591,lower
+distinct_categories,Distinct categories (bounded ordinal),Mann-Whitney U,64002.0,0.000582,True,0.3394,lower
+avg_txn_value,"Avg transaction value (ratio, skewed)",Mann-Whitney U,72797.5,0.183725,False,0.0053,lower
+return_count,Return count (zero-inflated),Mann-Whitney U,73377.0,0.147038,False,0.1368,lower
+is_returned_rate,Return rate per customer (zero-inflated proportion),Mann-Whitney U,110279.0,9e-06,True,0.1767,lower
+acquisition_channel,"Acquisition channel (categorical, 4 levels)",Chi-square,5.8387,0.119725,False,0.0624,highest_rate: organic
+region,"Region (categorical, 4 levels)",Chi-square,3.7571,0.288915,False,0.05,highest_rate: east
+signup_year,"Signup year (categorical, 3 cohorts)",Chi-square,70.7192,0.0,True,0.2171,highest_rate: cohort 2026
