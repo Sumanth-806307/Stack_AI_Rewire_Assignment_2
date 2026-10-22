@@ -1,0 +1,92 @@
+[
+  {
+    "driver": "total_spend",
+    "label": "Total spend (monetary, skewed)",
+    "test": "Mann-Whitney U",
+    "statistic": 61626.5,
+    "p_value": 8.8e-05,
+    "significant": true,
+    "effect_size": 0.3627,
+    "direction": "lower"
+  },
+  {
+    "driver": "txn_count",
+    "label": "Transaction count (discrete, skewed)",
+    "test": "Mann-Whitney U",
+    "statistic": 62236.5,
+    "p_value": 0.000153,
+    "significant": true,
+    "effect_size": 0.3591,
+    "direction": "lower"
+  },
+  {
+    "driver": "distinct_categories",
+    "label": "Distinct categories (bounded ordinal)",
+    "test": "Mann-Whitney U",
+    "statistic": 64002.0,
+    "p_value": 0.000582,
+    "significant": true,
+    "effect_size": 0.3394,
+    "direction": "lower"
+  },
+  {
+    "driver": "avg_txn_value",
+    "label": "Avg transaction value (ratio, skewed)",
+    "test": "Mann-Whitney U",
+    "statistic": 72797.5,
+    "p_value": 0.183725,
+    "significant": false,
+    "effect_size": 0.0053,
+    "direction": "lower"
+  },
+  {
+    "driver": "return_count",
+    "label": "Return count (zero-inflated)",
+    "test": "Mann-Whitney U",
+    "statistic": 73377.0,
+    "p_value": 0.147038,
+    "significant": false,
+    "effect_size": 0.1368,
+    "direction": "lower"
+  },
+  {
+    "driver": "is_returned_rate",
+    "label": "Return rate per customer (zero-inflated proportion)",
+    "test": "Mann-Whitney U",
+    "statistic": 110279.0,
+    "p_value": 9e-06,
+    "significant": true,
+    "effect_size": 0.1767,
+    "direction": "lower"
+  },
+  {
+    "driver": "acquisition_channel",
+    "label": "Acquisition channel (categorical, 4 levels)",
+    "test": "Chi-square",
+    "statistic": 5.8387,
+    "p_value": 0.119725,
+    "significant": false,
+    "effect_size": 0.0624,
+    "direction": "highest_rate: organic"
+  },
+  {
+    "driver": "region",
+    "label": "Region (categorical, 4 levels)",
+    "test": "Chi-square",
+    "statistic": 3.7571,
+    "p_value": 0.288915,
+    "significant": false,
+    "effect_size": 0.05,
+    "direction": "highest_rate: east"
+  },
+  {
+    "driver": "signup_year",
+    "label": "Signup year (categorical, 3 cohorts)",
+    "test": "Chi-square",
+    "statistic": 70.7192,
+    "p_value": 0.0,
+    "significant": true,
+    "effect_size": 0.2171,
+    "direction": "highest_rate: cohort 2026"
+  }
+]
